@@ -308,7 +308,7 @@ const emailVarification = asyncHandler(async (req, res) => {
   try {
     // const token = await user.createPasswordResetToken();
     // await user.save();
-    const resetURL = `Hi, Please  <a href='http://localhost:3000/login/'> Click Here </a> to verify your email account. This link is valid till 10 minutes from now.`;
+    const resetURL = `Hi, Please  <a href='https://www.bdaffiliateit.com/login/'> Click Here </a> to verify your email account. This link is valid till 10 minutes from now.`;
     const data = {
       to: email,
       text: "Hey User",
