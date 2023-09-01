@@ -6,10 +6,11 @@ const router = express.Router();
 
 router.post(
   "/",
+  productImgResize,
   authMiddleware,
   isAdmin,
   uploadPhoto.array("images", 10),
-  productImgResize,
+  
   uploadImages
 );
 

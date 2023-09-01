@@ -13,6 +13,7 @@ cloudinary.config({
   const cloudinaryUploadImg = async (fileToUploads) => {
     return new Promise((resolve) => {
       cloudinary.uploader.upload(fileToUploads, (result) => {
+        console.log(result);
         resolve(
           {
             url: result.secure_url,
