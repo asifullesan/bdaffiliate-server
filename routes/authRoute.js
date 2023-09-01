@@ -18,6 +18,7 @@ router.get("/getYearlyTotalOrder", authMiddleware, getYearlyTotalOrders);
 router.delete("/delete-product-cart/:cartItemId", authMiddleware, removeItemFromCart);
 router.post("/register",  createUser);
 router.post("/login",  loginUserCtrl);
+router.post("/logout",  logout);
 router.post("/verification",  emailVarification);
 router.post("/cart/create-order", authMiddleware, createOrder);
 router.post("/order", authMiddleware, createOrders);

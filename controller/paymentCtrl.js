@@ -26,7 +26,7 @@ console.log(order.itemId);
     total_amount: order?.totalPrice,
     currency: "BDT",
     tran_id: tran_id, // use unique tran_id for each api call
-    success_url: `http://localhost:5000/api/user/payment/success/${tran_id}`,
+    success_url: `https://bdaffiliate-server.onrender.com/api/user/payment/success/${tran_id}`,
     fail_url: "http://localhost:3030/fail",
     cancel_url: "http://localhost:3030/cancel",
     ipn_url: "http://localhost:3030/ipn",
