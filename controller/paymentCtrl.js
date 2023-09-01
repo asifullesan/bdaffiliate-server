@@ -110,7 +110,7 @@ const success = async (req, res) => {
 
       if(updateOrder.modifiedCount>0) {
          res.redirect(
-            `http://localhost:3000/payment/success/${req.body.tran_id}`
+            `https://www.bdaffiliateit.com/payment/success/${req.body.tran_id}`
          )
       }
       console.log(updateOrder);
